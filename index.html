@@ -11,13 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        califford: '#da373d',
                         'bike-primary': '#E76F51',
                         'bike-primary-bg': 'rgba(231,111,81,0.10)',
                     },
@@ -36,29 +35,18 @@
                 <div class="flex-1">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </label>
-                        <ul
-                            tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 text-base rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             <li><a>Home</a></li>
                             <li><a>Shop</a></li>
                             <li><a>News</a></li>
                             <li><a>Contacts</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-2xl lg:text-4xl">Biker Zone</a>
+                    <a class="btn btn-ghost text-xl md:text-3xl lg:text-4xl">Biker Zone</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-base">
@@ -73,39 +61,65 @@
                 </div>
             </div>
         </nav>
-        
-        <!-- Slider Section -->
-        <div class="carousel w-full h-[450px] md:h-[550px] bg-bike-primary-bg">
+
+        <!-- Responsive Carousel Section -->
+        <div class="carousel w-full bg-bike-primary-bg h-[300px] md:h-[550px]">
             <!-- Slide 1 -->
-            <div id="slide1" class="carousel-item relative w-full">
-                <div class="flex flex-col md:flex-row items-center p-6 md:p-24">
-                    <div class="space-y-5 md:space-y-7 md:w-1/2">
-                        <h2 class="text-3xl md:text-6xl font-bold text-center md:text-left">Ride-on R15 V3 <br> with a smile</h2>
-                        <p class="text-sm md:text-lg text-center md:text-left">
-                            Embrace the thrill of the road with the R15 V3, a perfect blend of style, power, and precision. Designed for those who seek adventure, this bike delivers unmatched performance and an unforgettable riding experience. Whether it's your daily commute or a weekend escape, the R15 V3 is your ultimate companion.
+            <div id="slide1" class="carousel-item flex items-center justify-center w-full">
+                <div class="flex flex-col md:flex-row items-center px-4 md:px-24 space-y-4 md:space-y-0 md:space-x-4">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-2xl md:text-6xl font-bold">Ride-on R15 V3<br> with a smile</h2>
+                        <p class="mt-4 text-sm md:text-lg">
+                            Embrace the thrill of the road with the R15 V3, a perfect blend of style, power, and precision.
                         </p>
-                        <div class="text-center md:text-left">
-                            <button class="btn btn-error text-white mt-2 md:mt-4">Purchase</button>
-                        </div>
+                        <button class="btn btn-error text-white mt-4">Purchase</button>
                     </div>
-                    <img class="w-full md:w-1/2" src="images/slider/bike1.png" alt="Bike 1">
-                </div>
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide4" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    <img src="images/slider/bike1.png" alt="Bike 1" class="max-w-full h-[200px] md:h-[450px] object-contain">
                 </div>
             </div>
-            
-            <!-- Additional slides follow the same responsive structure -->
+
+            <!-- Slide 2 -->
+            <div id="slide2" class="carousel-item flex items-center justify-center w-full">
+                <div class="flex flex-col md:flex-row items-center px-4 md:px-24 space-y-4 md:space-y-0 md:space-x-4">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-2xl md:text-6xl font-bold">Experience Speed<br> Like Never Before</h2>
+                        <p class="mt-4 text-sm md:text-lg">
+                            Discover the thrill of adventure with our premium bikes. Designed for performance and style.
+                        </p>
+                        <button class="btn btn-error text-white mt-4">Learn More</button>
+                    </div>
+                    <img src="images/slider/bike2.png" alt="Bike 2" class="max-w-full h-[200px] md:h-[450px] object-contain">
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div id="slide3" class="carousel-item flex items-center justify-center w-full">
+                <div class="flex flex-col md:flex-row items-center px-4 md:px-24 space-y-4 md:space-y-0 md:space-x-4">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-2xl md:text-6xl font-bold">Master Every Ride<br> With Precision</h2>
+                        <p class="mt-4 text-sm md:text-lg">
+                            Engineered for the ultimate control and comfort on every terrain.
+                        </p>
+                        <button class="btn btn-error text-white mt-4">Shop Now</button>
+                    </div>
+                    <img src="images/slider/bike3.png" alt="Bike 3" class="max-w-full h-[200px] md:h-[450px] object-contain">
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div id="slide4" class="carousel-item flex items-center justify-center w-full">
+                <div class="flex flex-col md:flex-row items-center px-4 md:px-24 space-y-4 md:space-y-0 md:space-x-4">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-2xl md:text-6xl font-bold">Your Journey<br> Starts Here</h2>
+                        <p class="mt-4 text-sm md:text-lg">
+                            Gear up and embrace the adventure of a lifetime.
+                        </p>
+                        <button class="btn btn-error text-white mt-4">Explore Now</button>
+                    </div>
+                    <img src="images/slider/bike4.png" alt="Bike 4" class="max-w-full h-[200px] md:h-[450px] object-contain">
+                </div>
+            </div>
         </div>
     </header>
-    
-    <main class="md:container md:mx-auto">
-        <!-- Add main content here -->
-    </main>
-    
-    <footer>
-        <!-- Add footer content here -->
-    </footer>
 </body>
 </html>
